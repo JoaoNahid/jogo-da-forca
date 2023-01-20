@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --bg: #e9deb0;
+  --brown: #482c21;
+  --red: #a73e2b;
+  --green: #2f615e;
+}
+
+body{
+  background-color: var(--bg);
+  display: flex;
+  flex: 1;
+  height: 100vh;
+  align-items: flex-end;
+}
+footer{
+  font-family: 'Righteous', cursive;
+  font-size: 18px;
+  color: var(--green);
+  width: 100%;
+  padding: 12px 8px;
+  margin: 0 30px;
+  text-align: right;
+  border-top: solid 2px #fff;
+}
