@@ -1,0 +1,1 @@
+O mural foi criado como se fosse um quadro branco. Nele será exibido a dica da palavra e as letras que ja foram escolhidas. Para a dica pensei em colocar um typing effect

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
 
 *{
   padding: 0;
@@ -45,13 +46,101 @@ footer{
 #forca{
   width: 30%;
   padding: 16px;
+  height: 100%;
 }
 
 #jogo{
   width: 70%;
+  height: 100%;
   padding: 16px;
-  background-color: #2f615e;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+/* Estrutura forca */
+#estruturaForca{
+  width: 300px;
+  height: 100%;
+  position: relative;
+}
+
+#estruturaForca .base{
+  background-color: var(--brown);
+  height: 30px;
+  width: 70px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#estruturaForca .barraVertical{
+  background-color: var(--brown);
+  height: 100%;
+  width: 25px;
+  position: absolute;
+  bottom: 0;
+  left: 22.5px;
+}
+#estruturaForca .barraSuperior{
+  background-color: var(--brown);
+  height: 25px;
+  width: 250px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+#estruturaForca .barraDiagonal{
+  background-color: var(--brown);
+  height: 25px;
+  width: 136px;
+  position: absolute;
+  top: 57px;
+  left: 12px;
+  transform: rotate(-45deg);
+}
+
+/* Mural */
+#mural{
+  background-color: #fff;
+  border: solid 2px var(--brown);
+  border-radius: 3px;
+  width: 300px;
+  min-height: 100px;
+  padding: 8px;
+  width: max-content;
+  max-width: 100%;
+}
+#mural .dica{
+  font-family: 'Nanum Brush Script', cursive;
+  font-size: 20px;
+  color: var(--green);
+}
+
+/* Palavra */
+#palavra{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  gap: 12px;
+}
+
+#palavra .letra,
+#palavra .space{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+  position: relative;
+  color: var(--green);
+}
+#palavra .letra:after{
+  content: '';
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  bottom: -4px;
+  background-color: #482c21;
 }
